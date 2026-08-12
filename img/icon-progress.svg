@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-hidden="true">
+  <circle cx="60" cy="60" r="56" fill="var(--illust-bg, #e7efe9)"/>
+  <path d="M30 78c10-4 20-18 24-34 2 8 8 18 16 26 6-10 12-16 20-20-8 14-14 28-16 40H46c-2-6-8-10-16-12z" fill="var(--jade, #2f6b5a)"/>
+  <circle cx="54" cy="34" r="7" fill="var(--sand, #d6c7b0)"/>
+  <path d="M40 86h40" stroke="var(--ink, #14241f)" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+</svg>

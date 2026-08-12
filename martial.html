@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Martial Arts - MCMAP & Krav Maga</title>
+    <script src="js/theme-boot.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">Cali-<span>Tai</span></a>
+        <div class="header-tools">
+          <nav class="site-nav" aria-label="Primary">
+            <a href="beginner.html">Cali-Tai</a>
+            <a href="martial.html">Martial</a>
+            <a href="martial-progress.html">Martial progress</a>
+            <a href="progress.html">Cali progress</a>
+          </nav>
+          <div class="theme-toggle" data-theme-toggle></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero wrap">
+        <p class="eyebrow">Standalone track</p>
+        <h1>Martial arts practice</h1>
+        <p class="lede">
+          Separate from Cali-Tai calisthenics and tai chi plans. Choose Marine Corps Martial Arts (MCMAP)
+          fundamentals or Krav Maga practitioner-style basics. Progress is stored under a different local key
+          so the two tracks never mix.
+        </p>
+      </section>
+
+      <section class="section wrap">
+        <div class="level-links">
+          <a class="level-link" href="#mcmap">
+            <span class="level-link__body">
+              <strong>MCMAP</strong>
+              Stance, footwork, air striking, sustainment conditioning, ethos review. Not a belt course.
+            </span>
+          </a>
+          <a class="level-link" href="#krav">
+            <span class="level-link__body">
+              <strong>Krav Maga</strong>
+              Ready stance, movement, straight strikes, awareness drills. Instructor required for defenses & falls.
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section wrap" id="mcmap">
+        <p class="eyebrow">System</p>
+        <h2>Marine Corps Martial Arts (MCMAP)</h2>
+        <p class="lede">
+          Public fundamentals and conditioning sustainment. Certification still requires a Martial Arts Instructor.
+        </p>
+        <div class="level-links">
+          <a class="level-link" href="mcmap-beginner.html"><span class="level-link__body"><strong>Beginner</strong> Tan-aligned fundamentals</span></a>
+          <a class="level-link" href="mcmap-intermediate.html"><span class="level-link__body"><strong>Intermediate</strong> Combinations & volume</span></a>
+          <a class="level-link" href="mcmap-skilled.html"><span class="level-link__body"><strong>Skilled</strong> Dense sustainment</span></a>
+        </div>
+      </section>
+
+      <section class="section wrap" id="krav">
+        <p class="eyebrow">System</p>
+        <h2>Krav Maga</h2>
+        <p class="lede">
+          Solo-safe stance and striking practice with links to IKMF / MaxKravMaga / school materials. Partner defenses stay in class.
+        </p>
+        <div class="level-links">
+          <a class="level-link" href="krav-beginner.html"><span class="level-link__body"><strong>Beginner</strong> P1-flavored basics</span></a>
+          <a class="level-link" href="krav-intermediate.html"><span class="level-link__body"><strong>Intermediate</strong> Combos & close-range paths</span></a>
+          <a class="level-link" href="krav-skilled.html"><span class="level-link__body"><strong>Skilled</strong> Longer disciplined rounds</span></a>
+        </div>
+      </section>
+
+      <section class="section wrap" id="plan">
+        <p class="eyebrow">Local planner</p>
+        <h2>Open a martial plan</h2>
+        <form class="home-plan" data-home-plan>
+          <label>
+            System
+            <select name="system" required>
+              <option value="mcmap">MCMAP</option>
+              <option value="krav">Krav Maga</option>
+            </select>
+          </label>
+          <label>
+            Level
+            <select name="level" required>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="skilled">Skilled</option>
+            </select>
+          </label>
+          <label>
+            Weekly shape
+            <select name="days" required>
+              <option value="3">3 training days</option>
+              <option value="5">5 training days</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Open plan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>
+          Educational use only. MCMAP and Krav Maga contact skills require certified instructors.
+          See <a href="docs/MARTIAL.md">docs/MARTIAL.md</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/martial-data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

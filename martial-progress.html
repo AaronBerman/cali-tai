@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Martial Progress</title>
+    <script src="js/theme-boot.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-system="mcmap">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">Cali-<span>Tai</span></a>
+        <div class="header-tools">
+          <nav class="site-nav" aria-label="Primary">
+            <a href="martial.html">Martial hub</a>
+            <a href="martial-progress.html">Martial progress</a>
+            <a href="progress.html">Cali progress</a>
+          </nav>
+          <div class="theme-toggle" data-theme-toggle></div>
+        </div>
+      </div>
+    </header>
+
+    <main data-system="mcmap">
+      <section class="page-hero wrap">
+        <p class="eyebrow">Local only</p>
+        <h1>Martial progress</h1>
+        <p>
+          Separate storage from Cali-Tai (<code>martial-progress-v1</code>). Switch systems below to view each track.
+        </p>
+        <label class="home-plan" style="max-width: 20rem; margin-top: 1rem">
+          System
+          <select data-switch-system>
+            <option value="mcmap">MCMAP</option>
+            <option value="krav">Krav Maga</option>
+          </select>
+        </label>
+        <p class="muted" style="margin-top: 0.75rem">
+          Showing: <strong data-system-title>Marine Corps Martial Arts (MCMAP)</strong>
+        </p>
+      </section>
+
+      <section class="wrap section">
+        <div class="stats">
+          <div class="stat"><b data-stat="streak">0</b><span>Day streak</span></div>
+          <div class="stat"><b data-stat="sessions">0</b><span>Sessions logged</span></div>
+          <div class="stat"><b data-stat="today">Not yet</b><span>Trained today</span></div>
+        </div>
+
+        <div class="panel">
+          <h2>Recent sessions</h2>
+          <ul class="history-list" data-history-list></ul>
+          <div class="actions">
+            <button type="button" class="btn btn-ghost dark" data-export-progress>Export JSON</button>
+            <button type="button" class="btn btn-primary" data-clear-progress>Clear this system</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap section">
+        <h2>Safety for this system</h2>
+        <div class="panel" data-safety></div>
+        <div class="panel" style="margin-top: 1rem" data-sources></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p><a href="martial.html">Back to martial hub</a></p>
+      </div>
+    </footer>
+
+    <script src="js/martial-data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

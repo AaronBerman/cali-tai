@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cali-Tai - Calisthenics & Tai Chi</title>
+    <meta
+      name="description"
+      content="Lightweight local guide for calisthenics and tai chi with beginner to skilled plans, safety links, and offline progress tracking."
+    />
+    <script src="js/theme-boot.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">Cali-<span>Tai</span></a>
+        <div class="header-tools">
+          <nav class="site-nav" aria-label="Primary">
+            <a href="beginner.html">Beginner</a>
+            <a href="intermediate.html">Intermediate</a>
+            <a href="skilled.html">Skilled</a>
+            <a href="progress.html">Progress</a>
+            <a href="martial.html">Martial</a>
+          </nav>
+          <div class="theme-toggle" data-theme-toggle></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Cali-Tai introduction">
+        <div class="hero__media" aria-hidden="true">
+          <img class="hero__img" src="img/hero-practice.png" alt="" width="1600" height="900" />
+        </div>
+        <div class="hero__content">
+          <p class="hero__brand">Cali-Tai</p>
+          <p class="hero__lead">
+            Strength you can do on the floor. Flow you can feel in the breath. Local plans for 3 or 5 days - backed by public health sources.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="beginner.html">Start beginner</a>
+            <a class="btn btn-ghost" href="#plan">Build a plan</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <p class="eyebrow">Choose a path</p>
+        <h2>Train at your level</h2>
+        <p class="lede">
+          Each page includes calisthenics and tai chi, safety cues, and links to CDC, HHS, ACSM, NCCIH, Mayo Clinic, and NHS practice videos.
+        </p>
+        <div class="level-links">
+          <a class="level-link" href="beginner.html">
+            <img class="level-link__img" src="img/level-beginner.png" alt="" width="640" height="480" loading="lazy" />
+            <span class="level-link__body">
+              <strong>Beginner</strong>
+              Easy progressions, shorter sessions, recovery built in.
+            </span>
+          </a>
+          <a class="level-link" href="intermediate.html">
+            <img class="level-link__img" src="img/level-intermediate.png" alt="" width="640" height="480" loading="lazy" />
+            <span class="level-link__body">
+              <strong>Intermediate</strong>
+              More volume, unilateral work, longer forms.
+            </span>
+          </a>
+          <a class="level-link" href="skilled.html">
+            <img class="level-link__img" src="img/level-skilled.png" alt="" width="640" height="480" loading="lazy" />
+            <span class="level-link__body">
+              <strong>Skilled</strong>
+              Higher leverage under control - form first.
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <p class="eyebrow">Also available</p>
+        <h2>Martial arts track</h2>
+        <p class="lede">
+          Standalone MCMAP and Krav Maga practice plans - separate pages and separate local progress from Cali-Tai.
+        </p>
+        <a class="btn btn-ghost dark" href="martial.html">Open martial hub</a>
+      </section>
+
+      <section class="section wrap" id="plan">
+        <div class="split-intro">
+          <div>
+            <p class="eyebrow">Local planner</p>
+            <h2>3-day or 5-day week</h2>
+            <p class="lede">
+              Pick a level and schedule length. Your choice is saved on this device and opens the matching plan.
+            </p>
+            <div class="mark-row" aria-hidden="true">
+              <img src="img/icon-strength.svg" alt="" width="56" height="56" />
+              <img src="img/icon-flow.svg" alt="" width="56" height="56" />
+            </div>
+          </div>
+          <form class="home-plan" data-home-plan>
+            <label>
+              Level
+              <select name="level" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="skilled">Skilled</option>
+              </select>
+            </label>
+            <label>
+              Weekly shape
+              <select name="days" required>
+                <option value="3">3 training days</option>
+                <option value="5">5 training days</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" type="submit">Open plan</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <p class="eyebrow">On this device</p>
+        <h2>Progress at a glance</h2>
+        <div class="stats">
+          <div class="stat"><b data-stat="streak">0</b><span>Day streak</span></div>
+          <div class="stat"><b data-stat="sessions">0</b><span>Sessions logged</span></div>
+          <div class="stat"><b data-stat="today">Not yet</b><span>Trained today</span></div>
+        </div>
+        <a class="btn btn-ghost dark" href="progress.html">View progress</a>
+      </section>
+
+      <section class="section wrap">
+        <p class="eyebrow">Stay safe</p>
+        <h2>Verified guidance first</h2>
+        <div class="panel" data-safety></div>
+        <div class="panel" style="margin-top: 1rem" data-sources></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>
+          Cali-Tai runs fully in your browser. Progress stays in local storage on this device.
+          Educational use only  -  not a substitute for professional medical advice.
+          See <a href="docs/">docs/</a> and <a href="README.md">README</a> for setup notes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
