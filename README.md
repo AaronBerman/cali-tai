@@ -16,10 +16,9 @@ Educational only — not medical advice.
 No build step and no dependencies.
 
 1. Open `index.html` in a browser, **or**
-2. Serve the folder locally:
+2. Serve the folder locally from the repo root:
 
 ```powershell
-cd C:\Users\an80s\Projects\cali-tai
 npx --yes serve .
 ```
 
@@ -94,6 +93,10 @@ See [docs/ILLUSTRATIONS.md](docs/ILLUSTRATIONS.md).
 Workout copy, prescriptions, and external links live in `js/data.js`.  
 After edits, refresh the browser — nothing to compile.
 
-## License note
+A longer command reference is in [docs/usage.html](docs/usage.html).
 
-Site code is yours to use locally. Linked third-party articles/videos remain owned by their publishers; follow their terms when sharing or embedding.
+## License
+
+See [LICENSE](LICENSE). Changes: [CHANGELOG.md](CHANGELOG.md). How to report a problem: [SECURITY.md](SECURITY.md).
+
+Site code is yours to use locally under MIT. Linked third-party articles/videos remain owned by their publishers; follow their terms when sharing or embedding.

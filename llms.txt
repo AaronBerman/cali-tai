@@ -1,0 +1,7 @@
+# Cali-Tai
+
+Local static site for calisthenics, tai chi, MCMAP, and Krav Maga practice plans.
+
+Open index.html. Educational only. Not medical advice.
+
+See README.md and docs/usage.html.
